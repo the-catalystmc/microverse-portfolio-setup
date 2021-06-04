@@ -9,15 +9,13 @@ This project is a portfolio website created using HTML and CSS. It is linted to 
 HTML & CSS
 
 ## Getting Started
-There are no installations required. Simply clone or download the zip files and open the index.html to open the webpage.
+There are no installations required. Simply git clone git@github.com:the-catalystmc/microverse-portfolio-setup.git or download the zip files and open the index.html to open the webpage.
 
 ## Authors
 GitHub: @the-catalyst
 
 ## Contributing
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the issues page.
 
 ## Show your support
 Give a star if you like this project!
