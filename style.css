@@ -41,7 +41,6 @@ body {
   display: flex;
   text-align: left;
   order: 0;
-  flex-grow: 0;
   flex: 3;
 }
 
@@ -65,7 +64,7 @@ body {
 }
 
 .greet-section h1 {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 .info-section {
@@ -83,15 +82,15 @@ body {
   line-height: 24px;
 }
 
-.social ul{
-    width: 375px;
-    list-style: none;
-    margin: 0;
-    padding: 0px;
-    display: flex;
-    align-content: space-between;
+.social ul {
+  width: 375px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-content: space-between;
 }
 
 .social ul li {
-    padding: 0px 20px 0px 0px;
+  padding: 0 20px 0 0;
 }
