@@ -3,6 +3,7 @@
 body {
   font-family: Poppins, sans-serif;
   width: 400px;
+  height: 800px;
 }
 
 .flex-container {
@@ -89,6 +90,11 @@ body {
   padding: 0;
   display: flex;
   align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social h6 a {
+  text-decoration: none;
 }
 
 .social ul li {
