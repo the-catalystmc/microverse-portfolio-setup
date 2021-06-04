@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0;
+  padding: 10px;
+  align-content: space-between;
+}
+
+.navbar ul {
+  width: 365px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-logo {
+  position: static;
+  width: 76px;
+  height: 20px;
+  left: 10px;
+  top: 12px;
+  flex: 3;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  order: 0;
+  flex-grow: 0;
+}
+
+.greet-section {
+  position: static;
+  width: 100%;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px;
+  align-self: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 52px;
+}
+
+.info-section {
+  color: #344563;
+}
+
+.connect {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.ellipse-11 {
+  position: sticky;
+  width: 38.5px;
+  left: 1px;
+  top: 161.47px;
+}
+
+.rectangle-4 {
+  position: sticky;
+  width: 95.58px;
+  height: 40px;
+  left: 294px;
+  top: 110px;
+}
+
+.ellipse-3 {
+  position: sticky;
+  width: 40px;
+  left: 400px;
+  top: 130px;
+}
