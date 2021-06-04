@@ -55,6 +55,10 @@ body {
 
 .info-section {
   color: #344563;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .connect {
@@ -65,10 +69,10 @@ body {
 }
 
 .ellipse-11 {
-  position: sticky;
-  width: 38.5px;
+  position: absolute;
+  width: 25px;
   left: 1px;
-  top: 161.47px;
+  top: 110px;
 }
 
 .rectangle-4 {
@@ -76,12 +80,12 @@ body {
   width: 95.58px;
   height: 40px;
   left: 294px;
-  top: 110px;
+  top: 168px;
 }
 
 .ellipse-3 {
   position: sticky;
   width: 40px;
-  left: 400px;
-  top: 130px;
+  left: 360px;
+  top: 168px;
 }
