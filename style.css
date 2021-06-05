@@ -215,6 +215,13 @@ a {
   margin: 12px 0;
 }
 
+ul .small-button-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  height: auto;
+}
+
 .small-button {
   width: auto;
   height: 24px;
@@ -225,6 +232,11 @@ a {
   border-radius: 8px;
   color: #6070ff;
   padding: 0 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-right: 12px;
 }
 
 .large-button {
@@ -289,7 +301,14 @@ a {
   margin: 12px 0;
 }
 
-.qualification ul {
+.qualification {
+    display: flex;
+    flex-direction: column;
+}
+
+.qualification ul{
+  display: flex;
+  flex-direction: column;
   width: auto;
   font-style: normal;
   font-weight: 500;
@@ -300,12 +319,15 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
-.lang-container {
+.cat-wrapper li p{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lang-container li{
   display: flex;
   width: 303px;
   height: 66.72px;
-  left: 12px;
   top: 12px;
   background: #f7f7f9;
   border-radius: 8px;
