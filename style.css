@@ -135,18 +135,6 @@ a {
   justify-items: center;
 }
 
-.works-warapper ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 114px 24px;
-  position: absolute;
-  width: 375px;
-  height: 2788px;
-  left: 0;
-  top: 718px;
-}
-
 .project-1 {
   position: relative;
   display: flex;
@@ -183,6 +171,7 @@ a {
   width: 100%;
   display: flex;
   list-style: none;
+  background-color: #fff;
 }
 
 .canopy-flex ul li {
@@ -242,6 +231,7 @@ ul .small-button-wrapper {
   align-items: center;
   margin: 12px 0;
   height: auto;
+  background-color: #fff;
 }
 
 .small-button {
@@ -259,6 +249,7 @@ ul .small-button-wrapper {
   line-height: 16px;
   letter-spacing: 0.03em;
   margin-right: 12px;
+  align-content: center;
 }
 
 .large-button {
