@@ -111,6 +111,19 @@ a {
 }
 
 /* Project Pages */
+
+.works-warapper ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 24px;
+  position: absolute;
+  width: 375px;
+  height: 2788px;
+  left: 0px;
+  top: 718px;
+}
+
 .project-1 {
   position: relative;
   display: flex;
