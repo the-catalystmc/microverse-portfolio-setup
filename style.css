@@ -353,3 +353,9 @@ ul .small-button-wrapper {
   border-bottom: 1px solid #ccc;
   padding-top: 0.5rem;
 }
+
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
