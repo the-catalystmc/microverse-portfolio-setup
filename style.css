@@ -89,6 +89,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  margin: 0 0 10px 0;
 }
 
 .social ul {
@@ -354,8 +355,62 @@ ul .small-button-wrapper {
   padding-top: 0.5rem;
 }
 
+#form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 #contact-me {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 779px;
+  border-top-left-radius: 6rem;
+  background: #6070ff url(../images/contact.svg) 100% 10% no-repeat;
+}
+
+#contact-me h1 {
+  width: 327px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
+  align-self: center;
+  text-align: center;
+  padding: 100px 0 0 0;
+  margin: 0;
+}
+
+#contact-me p {
+  width: 327px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+  align-self: center;
+  margin: 0;
+  text-align: center;
+}
+ 
+.input-box {
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: auto;
+  margin-bottom: 12px;
+  padding: 15px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  align-self: center;
+  width: 300px;
+}
+
+#contact-me ul {
+  align-self: center;
+}
+
+.input-box-area {
+  height: 130px;
+  margin-bottom: 0;
+  font-size: 15px;
 }
