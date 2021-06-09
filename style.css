@@ -7,6 +7,9 @@
 body {
   font-family: Poppins, sans-serif;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
 }
 
 .flex-container {
@@ -19,6 +22,7 @@ body {
   background-image: url(images/background.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
 }
 
 ul {
@@ -38,8 +42,6 @@ ul {
   position: static;
   width: 76px;
   height: 20px;
-  left: 10px;
-  top: 12px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -56,6 +58,8 @@ a {
 }
 
 .greet-section {
+  display: flex;
+  flex-direction: column;
   position: static;
   width: 100%;
   color: #172b4d;
@@ -365,7 +369,7 @@ ul .small-button-wrapper {
   flex-direction: column;
   height: 779px;
   border-top-left-radius: 6rem;
-  margin-top: 550px;
+  margin-top: 700px;
   background: #6070ff url(../images/contact.svg) 100% 10% no-repeat;
 }
 
@@ -411,4 +415,56 @@ ul .small-button-wrapper {
   height: 130px;
   margin-bottom: 0;
   font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+body {
+  width: 100%;
+}
+
+.navbar ul {
+  width: 100%;
+}
+
+.flex-container {
+  width: 100%;
+  align-self: center;
+  background: none;
+}
+
+header {
+  padding: 0 0 0px 0;
+}
+
+.greet-section {
+  background: #fff url(images/desktopbg.svg);
+  background-repeat: no-repeat;  
+  height: 100vh;
+  border-bottom-left-radius: 6rem;
+}
+
+.greet-section h1 {
+  margin: 200px 0 0 0;
+  padding: 0 0 0 0;
+  width: 900px;
+  font-size: 48;
+  font-weight: bold;
+  align-self: center;
+}
+
+.greet-section p {
+  width: 900px;
+  align-self: center;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.social {
+  width: 900px;
+  align-self: center;
+}
+
+.connect {
+  margin: 0 0 0 0;
+}
 }
