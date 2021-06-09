@@ -358,7 +358,6 @@ ul .small-button-wrapper {
 #form {
   display: flex;
   flex-direction: column;
-  
 }
 
 #contact-me {
@@ -366,6 +365,7 @@ ul .small-button-wrapper {
   flex-direction: column;
   height: 779px;
   border-top-left-radius: 6rem;
+  margin-top: 550px;
   background: #6070ff url(../images/contact.svg) 100% 10% no-repeat;
 }
 
@@ -377,7 +377,7 @@ ul .small-button-wrapper {
   align-self: center;
   text-align: center;
   padding: 100px 0 0 0;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 #contact-me p {
@@ -385,17 +385,15 @@ ul .small-button-wrapper {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
   align-self: center;
   margin: 0;
-  text-align: center;
 }
- 
+
 .input-box {
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: auto;
   margin-bottom: 12px;
   padding: 15px;
   font-size: 17px;
