@@ -53,9 +53,14 @@ ul {
   flex: 3;
 }
 
-a {
+a,
+a:hover,
+a:focus,
+a:visited {
+  color: inherit;
   text-decoration: none;
 }
+
 .menu-options {
   display: none;
 }
@@ -453,12 +458,6 @@ body {
 
 .navbar ul {
   width: 100%;
-  transition: all 1s ease-in;
-}
-
-.navbar ul:hover {
-  font-size: 20px;
-  color: #000205;
 }
 
 .flex-container {
@@ -483,6 +482,12 @@ header {
   color: #344563;
   align-content: space-between;
   padding-right: 30px;
+  transition: all 0.2s ease-in;
+}
+
+.menu-options:hover {
+  font-size: 17px;
+  color: #000205;
 }
 
 .greet-section {
@@ -601,8 +606,6 @@ justify-self: center;
   margin: 50px 0 0 150px;
   padding: 0 0 0 0;
 }
-
-
 
 .info-section {
   line-height: 24px;
