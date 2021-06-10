@@ -150,7 +150,6 @@ a {
 
 .works-wrapper ul {
   display: grid;
-  grid-template-columns: auto;
   grid-template-rows: 20% 20% 20% 20%;
   grid-row-gap: 125px;
   background-color: #e5e5e5;
@@ -454,6 +453,12 @@ body {
 
 .navbar ul {
   width: 100%;
+  transition: all 1s ease-in;
+}
+
+.navbar ul:hover {
+  font-size: 20px;
+  color: #000205;
 }
 
 .flex-container {
@@ -513,10 +518,14 @@ header {
 
 /* PROJECTS */
 .works-wrapper ul {
-  grid-row-gap: 100px;
-  padding-bottom: 100;
-  height: px;
+  grid-row-gap: 125px;
   align-content: center;
+  grid-template-rows: 20% 20% 20% 20%;
+}
+
+.list-wrapper {
+  padding: 200px 0;
+  padding-top: 0px;
 }
 
 .project-1 {
@@ -592,6 +601,9 @@ justify-self: center;
   margin: 50px 0 0 150px;
   padding: 0 0 0 0;
 }
+
+
+
 .info-section {
   line-height: 24px;
 }
