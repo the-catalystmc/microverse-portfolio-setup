@@ -9,7 +9,7 @@ body {
   width: 400px;
   display: flex;
   flex-direction: column;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .flex-container {
@@ -55,6 +55,9 @@ ul {
 
 a {
   text-decoration: none;
+}
+.menu-options {
+  display: none;
 }
 
 .greet-section {
@@ -154,7 +157,11 @@ a {
   border-radius: 16px;
 }
 
-.project-1 img {
+.desktoppic {
+  display: none;
+}
+
+.projectpic {
   position: relative;
   top: 16px;
   width: 340px;
@@ -417,7 +424,7 @@ ul .small-button-wrapper {
   font-size: 15px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 body {
   width: 100%;
 }
@@ -433,13 +440,27 @@ body {
 }
 
 header {
-  padding: 0 0 0px 0;
+  margin: 0 100px;
+}
+
+.navbar ul li img {
+  display: none;
+}
+
+.menu-options {
+  display: flex;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  align-content: space-between;
+  padding-right: 30px;
 }
 
 .greet-section {
   background: #fff url(images/desktopbg.svg);
   background-repeat: no-repeat;  
-  height: 100vh;
+  height: 800px;
   border-bottom-left-radius: 6rem;
 }
 
@@ -466,5 +487,51 @@ header {
 
 .connect {
   margin: 0 0 0 0;
+}
+
+.project-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  height: 440px;
+}
+
+.projectpic {
+  display: none;
+}
+
+.desktoppic{
+  display: block;
+  height: 400px;
+}
+
+.info-wrapper {
+  margin: 0 0 0 48px;
+}
+
+.info-wrapper p {
+  width: auto;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 25px 0 0 0;
+}
+
+.info-wrapper h2 {
+  margin: 0 0 10px 0px;
+  width: auto;
+}
+
+.list-wrapper li {
+align-self: flex-end;
+justify-self: center;
+}
+
+.small-button-wrapper {
+  margin-top: 0px;
+}
+
+.large-button {
+  margin: 0 0 80px 0;
 }
 }
