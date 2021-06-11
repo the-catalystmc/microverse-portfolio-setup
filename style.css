@@ -436,7 +436,7 @@ ul .small-button-wrapper {
   line-height: 20px;
   color: #172b4d;
   align-self: center;
-  width: 300px;
+  width: 100%;
 }
 
 #contact-me ul {
