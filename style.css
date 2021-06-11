@@ -6,7 +6,7 @@
 
 body {
   font-family: Poppins, sans-serif;
-  width: 400px;
+  width: auto;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -164,7 +164,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  width: 375px;
+  width: 80%;
   height: 650px;
   top: 114px;
   background: #fff;
@@ -184,7 +184,6 @@ a:visited {
 .projectpic {
   position: relative;
   top: 16px;
-  width: 340px;
 }
 
 .project-1 h2 {
@@ -327,7 +326,7 @@ ul .small-button-wrapper {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 375px;
+  width: auto;
   height: 100vh;
   border-bottom-left-radius: 6rem;
 }
@@ -399,9 +398,10 @@ ul .small-button-wrapper {
 #contact-me {
   display: flex;
   flex-direction: column;
-  height: 779px;
+  width: auto;
+  height: auto;
   border-top-left-radius: 6rem;
-  margin-top: 700px;
+  margin-top: 500px;
   background: #6070ff url(../images/contact.svg) 100% 10% no-repeat;
 }
 
@@ -449,7 +449,7 @@ ul .small-button-wrapper {
   font-size: 15px;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   body {
     width: 100%;
   }
