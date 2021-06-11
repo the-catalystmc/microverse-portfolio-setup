@@ -6,7 +6,11 @@
 
 body {
   font-family: Poppins, sans-serif;
-  width: 400px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .flex-container {
@@ -38,8 +42,6 @@ ul {
   position: static;
   width: 76px;
   height: 20px;
-  left: 10px;
-  top: 12px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -51,11 +53,21 @@ ul {
   flex: 3;
 }
 
-a {
+a,
+a:hover,
+a:focus,
+a:visited {
+  color: inherit;
   text-decoration: none;
 }
 
+.menu-options {
+  display: none;
+}
+
 .greet-section {
+  display: flex;
+  flex-direction: column;
   position: static;
   width: 100%;
   color: #172b4d;
@@ -92,7 +104,7 @@ a {
   margin: 0 0 10px 0;
 }
 
-.social ul {
+.sociala ul {
   width: 375px;
   list-style: none;
   margin: 0;
@@ -102,8 +114,14 @@ a {
   position: relative;
 }
 
-.social h6 a {
-  text-decoration: none;
+.socialb ul {
+  width: 375px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-content: space-between;
+  position: relative;
 }
 
 .lang-container li {
@@ -119,7 +137,12 @@ a {
   margin: 12px 0;
 }
 
-.social ul li {
+.sociala ul li {
+  padding: 0 20px 0 0;
+  width: 20px;
+}
+
+.socialb ul li {
   padding: 0 20px 0 0;
   width: 20px;
 }
@@ -130,10 +153,10 @@ a {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 20% 20% 20% 20%;
-  grid-template-areas: "main" "main" "main" "main";
   grid-row-gap: 125px;
   background-color: #e5e5e5;
   justify-items: center;
+  align-items: center;
 }
 
 .project-1 {
@@ -141,7 +164,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  width: 375px;
+  width: 80%;
   height: 650px;
   top: 114px;
   background: #fff;
@@ -150,10 +173,17 @@ a {
   border-radius: 16px;
 }
 
-.project-1 img {
+.desktoppic {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.projectpic {
   position: relative;
   top: 16px;
-  width: 340px;
 }
 
 .project-1 h2 {
@@ -251,6 +281,10 @@ ul .small-button-wrapper {
   align-content: center;
 }
 
+.small-button2 {
+  display: none;
+}
+
 .large-button {
   align-items: center;
   padding: 12px;
@@ -292,8 +326,9 @@ ul .small-button-wrapper {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 375px;
+  width: auto;
   height: 100vh;
+  border-bottom-left-radius: 6rem;
 }
 
 .about-me h1 {
@@ -318,7 +353,7 @@ ul .small-button-wrapper {
   flex-direction: column;
 }
 
-.qualification ul {
+.cat-wrapper {
   display: flex;
   flex-direction: column;
   width: auto;
@@ -363,9 +398,10 @@ ul .small-button-wrapper {
 #contact-me {
   display: flex;
   flex-direction: column;
-  height: 779px;
+  width: auto;
+  height: auto;
   border-top-left-radius: 6rem;
-  margin-top: 550px;
+  margin-top: 500px;
   background: #6070ff url(../images/contact.svg) 100% 10% no-repeat;
 }
 
@@ -400,7 +436,7 @@ ul .small-button-wrapper {
   line-height: 20px;
   color: #172b4d;
   align-self: center;
-  width: 300px;
+  width: 100%;
 }
 
 #contact-me ul {
@@ -411,4 +447,231 @@ ul .small-button-wrapper {
   height: 130px;
   margin-bottom: 0;
   font-size: 15px;
+}
+
+@media screen and (min-width: 993px) {
+  body {
+    width: 100%;
+  }
+
+  .navbar ul {
+    width: 100%;
+  }
+
+  .flex-container {
+    width: 100%;
+    align-self: center;
+    background: none;
+  }
+
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 45px;
+    z-index: 2;
+    padding: 0 100px;
+    background: #fff;
+  }
+
+  .menu-options {
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    align-content: space-between;
+    padding-right: 30px;
+  }
+
+  .greet-section {
+    background: #fff url(images/desktopbg.svg);
+    background-repeat: no-repeat;
+    height: auto;
+    border-bottom-left-radius: 6rem;
+  }
+
+  .greet-section h1 {
+    margin: 200px 0 0 0;
+    padding: 0 0 0 0;
+    width: 900px;
+    font-size: 48px;
+    font-weight: bold;
+    align-self: center;
+  }
+
+  .greet-section p {
+    width: 900px;
+    align-self: center;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .sociala {
+    width: 900px;
+    align-self: center;
+  }
+
+  .connect {
+    margin: 0 0 0 0;
+  }
+
+  /* PROJECTS */
+  .works-wrapper ul {
+    grid-row-gap: 100px;
+    align-content: center;
+  }
+
+  .list-wrapper {
+    padding: 0 0 200px 0;
+  }
+
+  .project-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 440px;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .projectpic {
+    display: none;
+  }
+
+  .desktoppic {
+    display: block;
+    height: 400px;
+  }
+
+  .info-wrapper {
+    margin: 0 0 0 48px;
+  }
+
+  .info-wrapper p {
+    width: auto;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 25px 0 0 0;
+  }
+
+  .info-wrapper h2 {
+    margin: 0 0 10px 0;
+    width: auto;
+  }
+
+  .list-wrapper li {
+    align-self: flex-end;
+    justify-self: center;
+  }
+
+  .lang-container li {
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    margin: 0 15px 0 0;
+    padding: 0 0 0 10px;
+  }
+
+  .canopy-flex ul li {
+    width: auto;
+  }
+
+  .small-button2 {
+    display: flex;
+  }
+
+  .small-button-wrapper {
+    margin-top: 0;
+  }
+
+  .large-button {
+    margin: 0 0 80px 0;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  #about {
+    flex-direction: row;
+    height: auto;
+    align-content: center;
+    margin: 50px 0 0 150px;
+    padding: 0 0 0 0;
+    border-bottom-right-radius: 6rem;
+  }
+
+  .info-section {
+    line-height: 24px;
+  }
+
+  .sociala ul {
+    margin: 0 0 0 0;
+  }
+
+  .about-wrapper p {
+    width: 447px;
+  }
+
+  .qualification {
+    padding: 0 0 0 0;
+    flex-direction: row;
+  }
+
+  .qualification ul {
+    flex-direction: column;
+    margin: 100px 0 0 50px;
+  }
+
+  .lang-container {
+    flex-direction: row;
+    height: auto;
+    width: 600px;
+  }
+
+  .lang-container li img {
+    align-self: flex-start;
+  }
+
+  .navbar ul li img {
+    display: none;
+  }
+
+  .cat-wrapper li ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  #contact-me {
+    background: #6070ff url(images/contactformbackgroundshapes.svg) 100% 10% no-repeat;
+    margin: 0 0 0 0;
+  }
+
+  #contact-me ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-me p {
+    width: 550px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .input-box {
+    width: 430px;
+    border-radius: 0;
+  }
 }
