@@ -449,7 +449,7 @@ ul .small-button-wrapper {
   font-size: 15px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
   body {
     width: 100%;
   }
