@@ -10,6 +10,8 @@ HTML & CSS
 
 ## Getting Started
 There are no installations required. Simply git clone git@github.com:the-catalystmc/microverse-portfolio-setup.git or download the zip files and open the index.html to open the webpage.
+You can vist the website hosted on GitHub pages through the following link: 
+https://the-catalystmc.github.io/microverse-portfolio-setup/
 
 ## Authors
 GitHub: @the-catalyst
