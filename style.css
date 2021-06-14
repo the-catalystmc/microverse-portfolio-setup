@@ -483,6 +483,12 @@ ul .small-button-wrapper {
     color: #344563;
     align-content: space-between;
     padding-right: 30px;
+    transition: all 0.2s ease-in;
+  }
+
+  .menu-options:hover {
+    font-size: 17px;
+    color: #000205;
   }
 
   .greet-section {
