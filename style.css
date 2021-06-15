@@ -224,7 +224,7 @@ ul .back-end {
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  color: #7a869a;
+  color: #484f5a;
 }
 
 .year {
@@ -235,7 +235,7 @@ ul .back-end {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #484f5a;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -331,7 +331,7 @@ ul .small-button-wrapper {
   border-bottom-left-radius: 6rem;
 }
 
-.about-me h1 {
+.about-me h2 {
   position: relative;
   width: 200px;
   height: 101px;
@@ -405,7 +405,7 @@ ul .small-button-wrapper {
   background: #6070ff url(../images/contact.svg) 100% 10% no-repeat;
 }
 
-#contact-me h1 {
+#contact-me h2 {
   width: 327px;
   font-weight: bold;
   font-size: 40px;
@@ -486,10 +486,7 @@ ul .small-button-wrapper {
     transition: all 0.2s ease-in;
   }
 
-  .menu-options:hover {
-    font-size: 17px;
-    color: #000205;
-  }
+  
 
   .greet-section {
     background: #fff url(images/desktopbg.svg);
