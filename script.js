@@ -1,6 +1,6 @@
 const popMenu = document.getElementById('pop-menu');
 const burgerBtn = document.getElementById('burger');
-const portfolioBtn = document.querySelector('.portfolio')
+const listParent = document.getElementById('menu-list')
 
 let isMenuClose = true;
 
@@ -9,7 +9,11 @@ burgerBtn.addEventListener('click', () => {
   isMenuClose = !isMenuClose;
 });
 
-portfolioBtn.addEventListener('click', closeMenu());
+listParent.addEventListener("click", function(e) {
+  if(e.target && e.target.nodeName == "A") {
+      closeMenu();
+  }
+});
 
 function openMenu() {
   popMenu.style.display = 'flex';
