@@ -22,3 +22,14 @@ listParent.addEventListener('click', (e) => {
     closeMenu();
   }
 });
+
+//POPUP WINDOW SETUP
+
+const projectOne = {
+  name: 'Tonic',
+  description: 'tonic',
+  'featured image': 'url',
+  technologies: 'html, css, javaScript',
+  'link to live version': 'url',
+  'link to source': 'url'
+}
