@@ -34,18 +34,23 @@ const projectOne = {
   'link to source': 'url'
 }
 
+let body = document.querySelector('body');
 let openPopup = document.querySelector('.popup-btn');
 let closePopup = document.querySelector('.close-btn');
 let popupWindow = document.querySelector('.popup-window');
+let popupBg = document.querySelector('.popup-bg');
 
 let isWindowClose = true;
 
 function openWindow() {
   popupWindow.style.display = 'block';
+  body.classList.toggle('override-flowbody');
 }
 
 function closeWindow() {
   popupWindow.style.display = 'none';
+  popupBg.style.display = 'none';
+  body.classList.toggle('override-flowbody');
 }
 
 openPopup.addEventListener('click', () => {
