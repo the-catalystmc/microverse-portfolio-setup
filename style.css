@@ -4,6 +4,90 @@
   padding-inline-start: 0;
 }
 
+/*.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(170, 174, 235, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}*/
+
+.popup-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin: 0 10px;
+  padding: 0 10px;
+  z-index: 1;
+  background-color: #fff;
+  display: block;
+}
+.popup-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-header .project-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #172b4d;
+}
+
+.close-btn {
+  background: #fff;
+  border: 2px;
+  color: #172b4d;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.feature-image {
+  display: flex;
+  width: 100%;
+}
+
+.popup-window .popup-description {
+  background: #fff;
+  display: flex;
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.d-item {
+  padding: 0 10px;
+}
+
+.d-item1 {
+  color: #7a869a;
+}
+
+.popup-window .popup-body {
+  color: #344563;
+}
+
+.popup-window .popup-lang {
+  display: flex;
+  background: #fff;
+}
+
+.popup-window .lb {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+}
+
+.btn-icon {
+  color: #6070ff;
+  margin: 0 5px 0 10px;
+}
+
 body {
   font-family: Poppins, sans-serif;
   display: flex;
@@ -25,6 +109,7 @@ body {
   background-image: url(images/background.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  justify-content: center;
 }
 
 ul {
@@ -472,6 +557,27 @@ ul .small-button-wrapper {
 }
 
 @media screen and (min-width: 993px) {
+.popup-window {
+  left: 10%;
+  top: 8%;
+  width: 80%;
+}
+
+  .dsk-container {
+    display: flex;
+  }
+
+  .popup-body-container {
+    font-size: 16px;
+    width: 68%;
+  }
+  
+  .lb {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+  }
+
   body {
     width: 100%;
   }

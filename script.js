@@ -33,3 +33,28 @@ const projectOne = {
   'link to live version': 'url',
   'link to source': 'url'
 }
+
+let openPopup = document.querySelector('.popup-btn');
+let closePopup = document.querySelector('.close-btn');
+let popupWindow = document.querySelector('.popup-window');
+
+let isWindowClose = true;
+
+function openWindow() {
+  popupWindow.style.display = 'block';
+}
+
+function closeWindow() {
+  popupWindow.style.display = 'none';
+}
+
+openPopup.addEventListener('click', () => {
+    console.log('Window Open')
+    openWindow();
+})
+
+closePopup.addEventListener('click', () => {
+  closeWindow();
+  console.log('Window Close')
+
+})
