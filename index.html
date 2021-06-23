@@ -1,443 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/102965b95f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/102965b95f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
     <title>Rhyine's Portfolio</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SE6FFM4YDV"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SE6FFM4YDV"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag("config", "G-SE6FFM4YDV");
+      gtag("config", "G-SE6FFM4YDV");
     </script>
-</head>
+  </head>
 
-<body>
+  <body class="">
     <header>
-        <nav class="navbar">
-            <ul>
-                <li class="nav-logo"><a href="#">My Logo</a></li>
-                <li class="menu-options"><a href="#portfolio">Portfolio</a></li>
-                <li class="menu-options"><a href="#about">About</a></li>
-                <li class="menu-options"><a href="#contact">Contact</a></li>
-                <li id="burger">
-                    <img src="images/Menu.svg" alt="menu image" class="menu-image burger" />
-                </li>
-            </ul>
-        </nav>
-        <div id="pop-menu" class="pop-menu">
-            <ul id="menu-list">
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <nav class="navbar">
+        <ul>
+          <li class="nav-logo"><a href="#">My Logo</a></li>
+          <li class="menu-options"><a href="#portfolio">Portfolio</a></li>
+          <li class="menu-options"><a href="#about">About</a></li>
+          <li class="menu-options"><a href="#contact">Contact</a></li>
+          <li id="burger">
+            <img
+              src="images/Menu.svg"
+              alt="menu image"
+              class="menu-image burger"
+            />
+          </li>
+        </ul>
+      </nav>
+      <div id="pop-menu" class="pop-menu">
+        <ul id="menu-list">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <main class="flex-container">
-        <!--POPUP WINDOW-->
+      <div class="overlay"></div>
+      <section class="greet-section">
+        <h1 class="main-header">
+          I’m Rhyine <br />
+          Glad to see you!
+        </h1>
+        <p class="info-section">
+          I’m a software developer! I can help you build a product , feature or
+          website Look through <br />
+          some of my work and experience! If you like what you see and have a
+          project you need <br />
+          coded, don’t hestiate to contact me.
+        </p>
+        <div class="sociala">
+          <h6 class="connect"><a href="#">LET’S CONNECT</a></h6>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"
+                ><img
+                  src="images/Vectortweet.svg"
+                  alt="twitter social media icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"
+                ><img
+                  src="images/Linkedin.svg"
+                  alt="linkedin social media icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"
+                ><img src="images/Vectorm.svg" alt="medium website icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"
+                ><img src="images/Vectorgit.svg" alt="github icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"
+                ><img src="images/Vectorpeace.svg" alt="angellist icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--PROJECTS SECTION BEGIN HERE -->
+      <section class="works-wrapper" id="portfolio">
+        <ul class="list-wrapper">
+          <li class="project-1">
+            <img
+              class="projectpic"
+              src="images/project1.svg"
+              alt="tonic project snapshot"
+            />
+            <img
+              class="desktoppic"
+              src="images/dortfoliopic1.svg"
+              alt="tonic project snapshot"
+            />
+            <div class="info-wrapper">
+              <div class="canopy-flex">
+                <h2>Tonic</h2>
+                <ul>
+                  <li class="canopy">CANOPY</li>
+                  <li class="back-end">• Back End Dev •</li>
+                  <li class="year">2015</li>
+                </ul>
+              </div>
+              <p class="primary-read">
+                A daily selection of privately personalized reads; no accounts
+                <br />
+                or sign-ups required.
+              </p>
+              <ul class="small-button-wrapper">
+                <li class="small-button">html</li>
+                <li class="small-button">css</li>
+                <li class="small-button">javaScript</li>
+              </ul>
+              <div class="lb">
+                <button
+                  class="large-button project-details popup-btn"
+                  type="button"
+                >
+                  See Project
+                </button>
+              </div>
+            </div>
+          </li>
+          <!--PROJECT 2-->
+          <li class="project-1 reverse">
+            <img
+              class="projectpic"
+              src="images/portfolio2.svg"
+              alt="multi-post stories project snapshot"
+            />
+            <img
+              class="desktoppic"
+              src="images/dortfoliopic2.svg"
+              alt="multi-post stories project snapshot"
+            />
+            <div class="info-wrapper">
+              <div class="canopy-flex">
+                <h2>Multi-Post Stories</h2>
+                <ul class="desktop">
+                  <li class="canopy desktop">FACEBOOK</li>
+                  <li class="back-end desktop">• Full Stack Dev •</li>
+                  <li class="year desktop">2015</li>
+                  <li class="canopy mobile">CANOPY</li>
+                  <li class="back-end mobile">• Back End Dev •</li>
+                  <li class="year mobile">2015</li>
+                </ul>
+              </div>
+              <p class="primary-read desktop">
+                Experimental content creation feature that allows users to<br />
+                add to an existing story over the course of a day without
+                spamming their friends.
+              </p>
+              <p class="primary-read mobile">
+                A daily selection of privately personalized reads; no accounts
+                <br />
+                or sign-ups required.
+              </p>
+              <ul class="small-button-wrapper">
+                <li class="small-button">html</li>
+                <li class="small-button small-button2">Ruby on Rails</li>
+                <li class="small-button">css</li>
+                <li class="small-button">javaScript</li>
+              </ul>
+              <div class="lb">
+                <button
+                  class="large-button project-details popup-btn"
+                  type="button"
+                >
+                  See Project
+                </button>
+              </div>
+            </div>
+          </li>
+          <!--PROJECT 3-->
+          <li class="project-1">
+            <img
+              class="projectpic"
+              src="images/project3.png"
+              alt="tonic project snapshot"
+            />
+            <img
+              class="desktoppic"
+              src="images/dortfolio33.png"
+              alt="facebook 360 project snapshot"
+            />
+            <div class="info-wrapper">
+              <div class="canopy-flex">
+                <h2 class="mobile">Tonic</h2>
+                <h2 class="desktop">Facebook 360</h2>
+                <ul>
+                  <li class="canopy desktop">FACEBOOK</li>
+                  <li class="back-end desktop">• Full Stack Dev •</li>
+                  <li class="year desktop">2015</li>
+                  <li class="canopy mobile">CANOPY</li>
+                  <li class="back-end mobile">• Back End Dev •</li>
+                  <li class="year mobile">2015</li>
+                </ul>
+              </div>
+              <p class="primary-read desktop">
+                Exploring the future of media in Facebook's first Virtual
+                Reality app; a place to discover and enjoy 360 photos and videos
+                on Gear VR.
+              </p>
+              <p class="primary-read mobile">
+                A daily selection of privately personalized reads; no accounts
+                <br />
+                or sign-ups required.
+              </p>
+              <ul class="small-button-wrapper">
+                <li class="small-button">html</li>
+                <li class="small-button small-button2">Ruby on Rails</li>
+                <li class="small-button">css</li>
+                <li class="small-button">javaScript</li>
+              </ul>
+              <div class="lb">
+                <button
+                  class="large-button project-details popup-btn"
+                  type="button"
+                >
+                  See Project
+                </button>
+              </div>
+            </div>
+          </li>
+          <!--PROJECT 4-->
+          <li class="project-1 reverse">
+            <img
+              class="projectpic"
+              src="images/project4.svg"
+              alt="multi-post stories project snapshot"
+            />
+            <img
+              class="desktoppic"
+              src="images/dortfoliopic3.svg"
+              alt="uber navigation project snapshot"
+            />
+            <div class="info-wrapper">
+              <div class="canopy-flex">
+                <h2 class="mobile">Multi-Post Stories</h2>
+                <h2 class="desktop">Uber Navigation</h2>
+                <ul>
+                  <li class="canopy desktop">UBER</li>
+                  <li class="back-end desktop">• Lead Developer•</li>
+                  <li class="year desktop">2018</li>
+                  <li class="canopy mobile">CANOPY</li>
+                  <li class="back-end mobile">• Back End Dev •</li>
+                  <li class="year mobile">2015</li>
+                </ul>
+              </div>
+              <p class="primary-read desktop">
+                Experimental content creation feature that allows users to<br />
+                add to an existing story over the course of a day without
+                spamming their friends.
+              </p>
+              <p class="primary-read mobile">
+                A daily selection of privately personalized reads; no accounts
+                <br />
+                or sign-ups required.
+              </p>
+              <ul class="small-button-wrapper">
+                <li class="small-button">html</li>
+                <li class="small-button small-button2">Ruby on Rails</li>
+                <li class="small-button">css</li>
+                <li class="small-button">javaScript</li>
+              </ul>
+              <div class="lb">
+                <button
+                  class="large-button project-details popup-btn"
+                  type="button"
+                >
+                  See Project
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!--PROJECT SECTION ENDS HERE-->
+
+      <!--POPUP WINDOW-->
+      <div class="popup-bg">
         <div class="popup-window">
-            <div class="popup-header">
-                <h2 class="project-name">Trying</h2>
-                <button class="close-btn">&times;</button>
-            </div>
-            <ul class="popup-description">
-                <li class="d-item">CANOPY</li>
-                <li class="d-item d-item1">• Back End Dev •</li>
-                <li class="d-item d-item1">2015</li>
-            </ul>
-            <div>
-                <img class="feature-image mobile" src="images/project1.svg" alt="project image" />
-                <img class="feature-image desktop" src="images/dortfoliopic1.svg" alt="project image" />
-            </div>
-            <div class="mobile">
-                <p class="popup-body">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of
-                    type and scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also the leap into
-                    electronic typesetting, remaining essent
-                </p>
-            </div>
-            <ul class="popup-lang mobile">
-                <li class="lang-item small-button mobile">html</li>
-                <li class="lang-item small-button mobile">css</li>
-                <li class="lang-item small-button mobile">javaScript</li>
-            </ul>
-            <div class="lb mobile">
-                <button class="large-button project-details mobile" type="button">
-                    See Live
-                    <span class="btn-icon">
-                        <img src="images/Icon.svg" alt="github icon">
-                    </span>
-                </button>
-                <button class="large-button project-details mobile" type="button">
-                    See Source
-                    <span class="btn-icon">
-                        <img src="images/Vectorgit.svg" alt="github icon">
-                    </span>
-                </button>
-            </div>
-            <div class="desktop dsk-container">
-                <div class="popup-body-container">
-                    <p class="popup-body">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essential. Lorem Ipsum is simply dummy text of the printing
-                        and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essential. Lorem Ipsum is simply dummy text of the printing
-                        and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essential. Lorem Ipsum is simply dummy text of the printing
-                        and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essential.
-                    </p>
-                </div>
-                <div class="second-div">
-                    <ul class="popup-lang">
-                        <li class="lang-item small-button">html</li>
-                        <li class="lang-item small-button">css</li>
-                        <li class="lang-item small-button">javaScript</li>
-                    </ul>
-                    <ul class="popup-lang">
-                        <li class="lang-item small-button">github</li>
-                        <li class="lang-item small-button">Ruby</li>
-                        <li class="lang-item small-button">Bootstrap</li>
-                    </ul>
-                    <div class="lb">
-                        <button class="large-button project-details" type="button">
-                            See Live
-                            <span class="btn-icon">
-                                <img src="images/Icon.svg" alt="github icon">
-                            </span>
-                        </button>
-                        <button class="large-button project-details" type="button">
-                            See Source
-                            <span class="btn-icon">
-                                <img src="images/Vectorgit.svg" alt="github icon">
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>        
-        <div class="overlay"></div>
-        <section class="greet-section">
-            <h1 class="main-header">
-                I’m Rhyine <br />
-                Glad to see you!
-            </h1>
-            <p class="info-section">
-                I’m a software developer! I can help you build a product , feature or
-                website Look through <br />
-                some of my work and experience! If you like what you see and have a
-                project you need <br />
-                coded, don’t hestiate to contact me.
+          <div class="popup-header">
+            <h2 class="project-name">Trying</h2>
+            <button class="close-btn">&times;</button>
+          </div>
+          <ul class="popup-description">
+            <li class="d-item">CANOPY</li>
+            <li class="d-item d-item1">• Back End Dev •</li>
+            <li class="d-item d-item1">2015</li>
+          </ul>
+          <div>
+            <img
+              class="feature-image mobile"
+              src="images/project1.svg"
+              alt="project image"
+            />
+            <img
+              class="feature-image desktop"
+              src="images/dortfoliopic1.svg"
+              alt="project image"
+            />
+          </div>
+          <div class="mobile">
+            <p class="popup-body">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
             </p>
-            <div class="sociala">
-                <h6 class="connect"><a href="#">LET’S CONNECT</a></h6>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"><img
-                                src="images/Vectortweet.svg" alt="twitter social media icon" /></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"><img src="images/Linkedin.svg"
-                                alt="linkedin social media icon" /></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"><img src="images/Vectorm.svg"
-                                alt="medium website icon" /></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"><img src="images/Vectorgit.svg"
-                                alt="github icon" /></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"><img
-                                src="images/Vectorpeace.svg" alt="angellist icon" /></a>
-                    </li>
-                </ul>
+          </div>
+          <ul class="popup-lang mobile">
+            <li class="lang-item small-button mobile">html</li>
+            <li class="lang-item small-button mobile">css</li>
+            <li class="lang-item small-button mobile">javaScript</li>
+          </ul>
+          <div class="lb mobile">
+            <button class="large-button project-details mobile" type="button">
+              See Live
+              <span class="btn-icon">
+                <img src="images/Icon.svg" alt="github icon" />
+              </span>
+            </button>
+            <button class="large-button project-details mobile" type="button">
+              See Source
+              <span class="btn-icon">
+                <img src="images/Vectorgit.svg" alt="github icon" />
+              </span>
+            </button>
+          </div>
+          <div class="desktop dsk-container">
+            <div class="popup-body-container">
+              <p class="popup-body">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essential. Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essential. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting,
+                remaining essential. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a
+                type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essential.
+              </p>
             </div>
-        </section>
+            <div class="second-div">
+              <ul class="popup-lang">
+                <li class="lang-item small-button">html</li>
+                <li class="lang-item small-button">css</li>
+                <li class="lang-item small-button">javaScript</li>
+              </ul>
+              <ul class="popup-lang">
+                <li class="lang-item small-button">github</li>
+                <li class="lang-item small-button">Ruby</li>
+                <li class="lang-item small-button">Bootstrap</li>
+              </ul>
+              <div class="lb">
+                <button class="large-button project-details" type="button">
+                  See Live
+                  <span class="btn-icon">
+                    <img src="images/Icon.svg" alt="github icon" />
+                  </span>
+                </button>
+                <button class="large-button project-details" type="button">
+                  See Source
+                  <span class="btn-icon">
+                    <img src="images/Vectorgit.svg" alt="github icon" />
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!--PROJECTS SECTION BEGIN HERE -->
-        <section class="works-wrapper" id="portfolio">
-            <ul class="list-wrapper">
-                <li class="project-1">
-                    <img class="projectpic" src="images/project1.svg" alt="tonic project snapshot" />
-                    <img class="desktoppic" src="images/dortfoliopic1.svg" alt="tonic project snapshot" />
-                    <div class="info-wrapper">
-                        <div class="canopy-flex">
-                            <h2>Tonic</h2>
-                            <ul>
-                                <li class="canopy">CANOPY</li>
-                                <li class="back-end">• Back End Dev •</li>
-                                <li class="year">2015</li>
-                            </ul>
-                        </div>
-                        <p class="primary-read">
-                            A daily selection of privately personalized reads; no accounts
-                            <br />
-                            or sign-ups required.
-                        </p>
-                        <ul class="small-button-wrapper">
-                            <li class="small-button">html</li>
-                            <li class="small-button">css</li>
-                            <li class="small-button">javaScript</li>
-                        </ul>
-                        <div class="lb">
-                            <button class="large-button project-details popup-btn" type="button">
-                                See Project
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <!--PROJECT 2-->
-                <li class="project-1 reverse">
-                    <img class="projectpic" src="images/portfolio2.svg" alt="multi-post stories project snapshot" />
-                    <img class="desktoppic" src="images/dortfoliopic2.svg" alt="multi-post stories project snapshot" />
-                    <div class="info-wrapper">
-                        <div class="canopy-flex">
-                            <h2>Multi-Post Stories</h2>
-                            <ul class="desktop">
-                                <li class="canopy desktop">FACEBOOK</li>
-                                <li class="back-end desktop">• Full Stack Dev •</li>
-                                <li class="year desktop">2015</li>
-                                <li class="canopy mobile">CANOPY</li>
-                                <li class="back-end mobile">• Back End Dev •</li>
-                                <li class="year mobile">2015</li>
-                            </ul>
-                        </div>
-                        <p class="primary-read desktop">
-                            Experimental content creation feature that allows users to<br />
-                            add to an existing story over the course of a day without
-                            spamming their friends.
-                        </p>
-                        <p class="primary-read mobile">
-                            A daily selection of privately personalized reads; no accounts
-                            <br />
-                            or sign-ups required.
-                        </p>
-                        <ul class="small-button-wrapper">
-                            <li class="small-button">html</li>
-                            <li class="small-button small-button2">Ruby on Rails</li>
-                            <li class="small-button">css</li>
-                            <li class="small-button">javaScript</li>
-                        </ul>
-                        <div class="lb">
-                            <button class="large-button project-details popup-btn" type="button">
-                                See Project
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <!--PROJECT 3-->
-                <li class="project-1">
-                    <img class="projectpic" src="images/project3.png" alt="tonic project snapshot" />
-                    <img class="desktoppic" src="images/dortfolio33.png" alt="facebook 360 project snapshot" />
-                    <div class="info-wrapper">
-                        <div class="canopy-flex">
-                            <h2 class="mobile">Tonic</h2>
-                            <h2 class="desktop">Facebook 360</h2>
-                            <ul>
-                                <li class="canopy desktop">FACEBOOK</li>
-                                <li class="back-end desktop">• Full Stack Dev •</li>
-                                <li class="year desktop">2015</li>
-                                <li class="canopy mobile">CANOPY</li>
-                                <li class="back-end mobile">• Back End Dev •</li>
-                                <li class="year mobile">2015</li>
-                            </ul>
-                        </div>
-                        <p class="primary-read desktop">
-                            Exploring the future of media in Facebook's first Virtual
-                            Reality app; a place to discover and enjoy 360 photos and videos
-                            on Gear VR.
-                        </p>
-                        <p class="primary-read mobile">
-                            A daily selection of privately personalized reads; no accounts
-                            <br />
-                            or sign-ups required.
-                        </p>
-                        <ul class="small-button-wrapper">
-                            <li class="small-button">html</li>
-                            <li class="small-button small-button2">Ruby on Rails</li>
-                            <li class="small-button">css</li>
-                            <li class="small-button">javaScript</li>
-                        </ul>
-                        <div class="lb">
-                            <button class="large-button project-details popup-btn" type="button">
-                                See Project
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <!--PROJECT 4-->
-                <li class="project-1 reverse">
-                    <img class="projectpic" src="images/project4.svg" alt="multi-post stories project snapshot" />
-                    <img class="desktoppic" src="images/dortfoliopic3.svg" alt="uber navigation project snapshot" />
-                    <div class="info-wrapper">
-                        <div class="canopy-flex">
-                            <h2 class="mobile">Multi-Post Stories</h2>
-                            <h2 class="desktop">Uber Navigation</h2>
-                            <ul>
-                                <li class="canopy desktop">UBER</li>
-                                <li class="back-end desktop">• Lead Developer•</li>
-                                <li class="year desktop">2018</li>
-                                <li class="canopy mobile">CANOPY</li>
-                                <li class="back-end mobile">• Back End Dev •</li>
-                                <li class="year mobile">2015</li>
-                            </ul>
-                        </div>
-                        <p class="primary-read desktop">
-                            Experimental content creation feature that allows users to<br />
-                            add to an existing story over the course of a day without
-                            spamming their friends.
-                        </p>
-                        <p class="primary-read mobile">
-                            A daily selection of privately personalized reads; no accounts
-                            <br />
-                            or sign-ups required.
-                        </p>
-                        <ul class="small-button-wrapper">
-                            <li class="small-button">html</li>
-                            <li class="small-button small-button2">Ruby on Rails</li>
-                            <li class="small-button">css</li>
-                            <li class="small-button">javaScript</li>
-                        </ul>
-                        <div class="lb">
-                            <button class="large-button project-details popup-btn" type="button">
-                                See Project
-                            </button>
-                        </div>
-                    </div>
-                </li>
+      <section class="about-me" id="about">
+        <div class="about-wrapper">
+          <h2>About Myself</h2>
+          <p class="info-section">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <div class="socialb">
+            <h6 class="connect"><a href="#">LET’S CONNECT</a></h6>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"
+                  ><img
+                    src="images/Vectortweet.svg"
+                    alt="twitter social media icon"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"
+                  ><img
+                    src="images/Linkedin.svg"
+                    alt="linkedin social media icon"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"
+                  ><img src="images/Vectorm.svg" alt="medium website icon"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"
+                  ><img src="images/Vectorgit.svg" alt="github icon"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"
+                  ><img src="images/Vectorpeace.svg" alt="angellist icon"
+                /></a>
+              </li>
             </ul>
-        </section>
-        <!--PROJECT SECTION ENDS HERE-->
-        <section class="about-me" id="about">
-            <div class="about-wrapper">
-                <h2>About Myself</h2>
-                <p class="info-section">
-                    Hello I’m a software developer! I can help you build a product ,
-                    feature or website Look through some of my work and experience! If
-                    you like what you see and have a project you need coded, don’t
-                    hestiate to contact me.
-                </p>
-                <div class="socialb">
-                    <h6 class="connect"><a href="#">LET’S CONNECT</a></h6>
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"><img
-                                    src="images/Vectortweet.svg" alt="twitter social media icon" /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"><img
-                                    src="images/Linkedin.svg" alt="linkedin social media icon" /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"><img
-                                    src="images/Vectorm.svg" alt="medium website icon" /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"><img
-                                    src="images/Vectorgit.svg" alt="github icon" /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/rhyine-stewart-a8373913a/"><img
-                                    src="images/Vectorpeace.svg" alt="angellist icon" /></a>
-                        </li>
-                    </ul>
-                    <div class="resume">
-                        <button class="large-button" type="button">Get my resume</button>
-                    </div>
-                </div>
+            <div class="resume">
+              <button class="large-button" type="button">Get my resume</button>
             </div>
+          </div>
+        </div>
 
-            <section class="qualification">
-                <ul class="cat-wrapper">
-                    <li>
-                        <p>Languages <img src="images/Disabled.svg" alt="arrow" /></p>
+        <section class="qualification">
+          <ul class="cat-wrapper">
+            <li>
+              <p>Languages <img src="images/Disabled.svg" alt="arrow" /></p>
 
-                        <ul class="lang-container">
-                            <li>
-                                <img src="images/js.svg" alt="javascript language logo" />
-                                <h5 class="title-text">JavaScript</h5>
-                            </li>
-                            <li>
-                                <img src="images/html.svg" alt="hyper-text mark up language logo" />
-                                <h5 class="title-text">HTML</h5>
-                            </li>
-                            <li>
-                                <img src="images/css.svg" alt="cascading style sheet language logo" />
-                                <h5 class="title-text">CSS</h5>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="seperator">
-                        <p>Frameworks <img src="images/Union.svg" alt="arrow" /></p>
-                    </li>
-                    <li class="seperator">
-                        <p>Skills<img src="images/Union.svg" alt="arrow" /></p>
-                    </li>
-                </ul>
-            </section>
+              <ul class="lang-container">
+                <li>
+                  <img src="images/js.svg" alt="javascript language logo" />
+                  <h5 class="title-text">JavaScript</h5>
+                </li>
+                <li>
+                  <img
+                    src="images/html.svg"
+                    alt="hyper-text mark up language logo"
+                  />
+                  <h5 class="title-text">HTML</h5>
+                </li>
+                <li>
+                  <img
+                    src="images/css.svg"
+                    alt="cascading style sheet language logo"
+                  />
+                  <h5 class="title-text">CSS</h5>
+                </li>
+              </ul>
+            </li>
+            <li class="seperator">
+              <p>Frameworks <img src="images/Union.svg" alt="arrow" /></p>
+            </li>
+            <li class="seperator">
+              <p>Skills<img src="images/Union.svg" alt="arrow" /></p>
+            </li>
+          </ul>
         </section>
-        <section id="contact">
-            <form id="contact-me" action="https://formspree.io/f/mnqlvaea" method="post">
-                <h2>Contact me</h2>
-                <p>
-                    If you have an application you are interested in developing, a
-                    feature that you need built or a project that needs coding. I’d love
-                    to help with it
-                </p>
-                <ul>
-                    <li>
-                        <input type="text" class="input-box" name="user_name" placeholder="Enter your name here"
-                            required maxlength="30" />
-                    </li>
-                    <li>
-                        <input type="email" class="input-box" name="user_email" placeholder="Enter your e-mail here"
-                            required />
-                    </li>
-                    <li>
-                        <textarea class="input-box input-box-area" placeholder="Write your message here"
-                            name="user_message" required maxlength="500"></textarea>
-                    </li>
-                    <li id="button-wrapper">
-                        <button class="large-button white-button" type="submit">
-                            Get In Touch
-                        </button>
-                    </li>
-                </ul>
-            </form>
-        </section>
+      </section>
+      <section id="contact">
+        <form
+          id="contact-me"
+          action="https://formspree.io/f/mnqlvaea"
+          method="post"
+        >
+          <h2>Contact me</h2>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+          <ul>
+            <li>
+              <input
+                type="text"
+                class="input-box"
+                name="user_name"
+                placeholder="Enter your name here"
+                required
+                maxlength="30"
+              />
+            </li>
+            <li>
+              <input
+                type="email"
+                class="input-box"
+                name="user_email"
+                placeholder="Enter your e-mail here"
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                class="input-box input-box-area"
+                placeholder="Write your message here"
+                name="user_message"
+                required
+                maxlength="500"
+              ></textarea>
+            </li>
+            <li id="button-wrapper">
+              <button class="large-button white-button" type="submit">
+                Get In Touch
+              </button>
+            </li>
+          </ul>
+        </form>
+      </section>
     </main>
-    <script src="script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>

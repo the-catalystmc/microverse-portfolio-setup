@@ -1,3 +1,4 @@
+
 const popMenu = document.getElementById('pop-menu');
 const burgerBtn = document.getElementById('burger');
 const listParent = document.getElementById('menu-list');
@@ -25,27 +26,24 @@ listParent.addEventListener('click', (e) => {
 
 //POPUP WINDOW SETUP
 
-const projectOne = {
-  name: 'Tonic',
-  description: 'tonic',
-  'featured image': 'url',
-  technologies: 'html, css, javaScript',
-  'link to live version': 'url',
-  'link to source': 'url'
-}
-
+let body = document.querySelector('body');
 let openPopup = document.querySelector('.popup-btn');
 let closePopup = document.querySelector('.close-btn');
 let popupWindow = document.querySelector('.popup-window');
+let popupBg = document.querySelector('.popup-bg');
 
 let isWindowClose = true;
 
 function openWindow() {
+  popupBg.style.display = 'flex';
   popupWindow.style.display = 'block';
+ 
 }
 
 function closeWindow() {
   popupWindow.style.display = 'none';
+  popupBg.style.display = 'none';
+
 }
 
 openPopup.addEventListener('click', () => {
