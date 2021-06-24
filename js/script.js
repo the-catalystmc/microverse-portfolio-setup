@@ -173,3 +173,27 @@ closeModalBtn.addEventListener('click', () => {
 window.addEventListener('load', () => {
   setUpPage();
 });
+
+//------------------------------------------------
+const emailBox = document.querySelector('#email');
+const formContainer = document.getElementById('contact-me');
+const errorMessage = document.getElementById('error-message');
+
+const isMailInvalid = (str) => {
+  if (/[A-Z]/g.test(str)) {
+    return true;
+  }
+  errorMessage.classList.remove('show');
+  return false;
+};
+
+window.addEventListener('keyup', () => {
+  isMailInvalid(emailBox.value);
+});
+
+formContainer.addEventListener('submit', (e) => {
+  if (isMailInvalid(emailBox.value)) {
+    e.preventDefault();
+    errorMessage.classList.add('show');
+  }
+});

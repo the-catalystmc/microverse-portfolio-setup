@@ -724,7 +724,7 @@ ul .small-button-wrapper {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin-bottom: 12px;
-  padding: 15px;
+  padding: 15px 1px;
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
@@ -740,6 +740,48 @@ ul .small-button-wrapper {
   height: 130px;
   margin-bottom: 0;
   font-size: 15px;
+}
+
+#error-message {
+  display: none;
+  width: auto;
+  height: auto;
+  border: none;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  color: #172b4d;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  align-content: center;
+  position: relative;
+}
+
+#error-message.show {
+  display: block;
+  width: auto;
+  height: auto;
+  border: none;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  color: #172b4d;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  align-content: center;
+  position: relative;
+}
+
+.intouch {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 993px) {
@@ -1037,8 +1079,18 @@ ul .small-button-wrapper {
     line-height: 28px;
   }
 
+  #button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .input-box {
     width: 430px;
     border-radius: 0;
+  }
+
+  .intouch {
+    margin-bottom: 20px;
   }
 }
