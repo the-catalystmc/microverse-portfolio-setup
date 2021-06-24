@@ -1,5 +1,3 @@
-
- 
 * {
   padding-inline-start: 0;
 }
@@ -196,16 +194,6 @@ a:visited {
   margin: 12px 0;
 }
 
-.sociala ul li {
-  padding: 0 20px 0 0;
-  width: 20px;
-}
-
-.socialb ul li {
-  padding: 0 20px 0 0;
-  width: 20px;
-}
-
 /* Project Pages */
 
 .project {
@@ -225,11 +213,11 @@ a:visited {
 }
 
 .project__title {
-   font-size: 32px;
-   line-height: 36px;
-   color: #172b4d;
-   font-weight: 700;
-   margin: 12px 0;
+  font-size: 32px;
+  line-height: 36px;
+  color: #172b4d;
+  font-weight: 700;
+  margin: 12px 0;
 }
 
 .project__quali {
@@ -243,13 +231,6 @@ a:visited {
   color: #7a869a;
   line-height: 16px;
   margin-right: 8px;
-}
-
-.project__quali li:first-child {
-  font-size: 13px;
-  font-weight: 600;
-  color: #344563;
-  text-transform: uppercase;
 }
 
 .project__circle {
@@ -316,7 +297,6 @@ a:visited {
   100% {
     opacity: 1;
   }
-  
 }
 
 .modal--active {
@@ -352,7 +332,6 @@ a:visited {
   font-size: 32px;
   color: #172b4d;
   margin-bottom: 10px;
-
 }
 
 .modal__icon-close {
@@ -499,15 +478,21 @@ a:visited {
   margin-left: 6px;
 }
 
+.sociala ul li {
+  padding: 0 20px 0 0;
+  width: 20px;
+}
 
-.works-wrapper ul {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 20% 20% 20% 20%;
-  grid-row-gap: 125px;
-  background-color: #e5e5e5;
-  justify-items: center;
-  align-items: center;
+.socialb ul li {
+  padding: 0 20px 0 0;
+  width: 20px;
+}
+
+.project__quali li:first-child {
+  font-size: 13px;
+  font-weight: 600;
+  color: #344563;
+  text-transform: uppercase;
 }
 
 .project-1 {
@@ -547,51 +532,6 @@ a:visited {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-}
-
-.canopy-flex ul {
-  position: relative;
-  width: 100%;
-  display: flex;
-  list-style: none;
-  background-color: #fff;
-}
-
-.canopy-flex ul li {
-  padding: 0 10px 0 0;
-}
-
-.canopy {
-  width: 55px;
-  height: 16px;
-  top: 8px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-}
-
-ul .back-end {
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 16px;
-  color: #484f5a;
-}
-
-.year {
-  width: 29px;
-  height: 16px;
-  top: 8px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #484f5a;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 0;
 }
 
 .primary-read {
@@ -806,6 +746,7 @@ ul .small-button-wrapper {
   .popup-bg {
     z-index: 3;
   }
+
   .popup-window {
     left: 10%;
     top: 8%;
@@ -864,7 +805,7 @@ ul .small-button-wrapper {
     font-size: 16px;
     width: 68%;
   }
-  
+
   .lb {
     display: flex;
     justify-content: space-between;
