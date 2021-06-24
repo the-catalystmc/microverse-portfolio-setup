@@ -32,7 +32,7 @@
     </script>
   </head>
 
-  <body class="">
+  <body class="overflow-hidden">
     <header>
       <nav class="navbar">
         <ul>
@@ -107,6 +107,8 @@
         </div>
       </section>
 
+      <!-- PROJECT  -->
+
       <section class="project">
         <div class="project__card">
           <img src="./images/dortfoliopic1.svg" alt="" class="project__img">
@@ -131,6 +133,40 @@
             <button class="project__button">See Project</button>
           </div>
         </div>           
+      </section>
+
+      <!-- MODAL -->
+
+      <section id="modal" class="modal modal--active">
+        <div class="modal__window">
+          <div class="modal__header">
+            <h2 class="modal__title">Tonic</h2>
+            <i class="modal__icon-close fas fa-times"></i>
+          </div>
+          <ul class="modal__list">
+            <li><h3 class="modal__company">Canopy</h3></li>
+            <li class="project__circle"></li>
+            <li><h4 class="modal__role">Front End</h4></li>
+            <li class="project__circle"></li>
+            <li><h4 class="modal__year">2010</h4></li>
+          </ul>
+          <img class="modal__img" src="./images/dortfoliopic1.svg" alt="Work preview for project Uber Navigation">
+          <div class="modal__info">
+            <p class="modal__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.</p>
+            <div class="modal__tags-buttons-container">
+              <ul class="modal__tech">
+                <li class="modal__tag">html</li>
+                <li class="modal__tag">css</li>
+                <li class="modal__tag">js</li>
+              </ul>
+              <div class="modal__line"></div>
+              <div class="modal__buttons-container">
+                <a href="#" class="modal__button modal__button--see-live" target="_blank">See live<i class="modal__icon-button fas fa-external-link-alt"></i></a>
+                <a href="#" class="modal__button modal__button--see-src" target="_blank">See source<i class="modal__icon-button fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!--PROJECTS SECTION BEGIN HERE -->
@@ -561,5 +597,7 @@
       </section>
     </main>
     <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
+
   </body>
 </html>
