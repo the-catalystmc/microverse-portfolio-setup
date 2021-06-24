@@ -747,9 +747,9 @@ ul .small-button-wrapper {
   width: auto;
   height: auto;
   border: none;
-  background: red;
+  background: rgb(255, 255, 255);
   border-radius: 8px;
-  color: #fff;
+  color: #172b4d;
   padding: 4px 10px;
   font-weight: 600;
   font-size: 12px;
@@ -766,9 +766,9 @@ ul .small-button-wrapper {
   width: auto;
   height: auto;
   border: none;
-  background: red;
+  background: rgb(255, 255, 255);
   border-radius: 8px;
-  color: #fff;
+  color: #172b4d;
   padding: 4px 10px;
   font-weight: 600;
   font-size: 12px;
