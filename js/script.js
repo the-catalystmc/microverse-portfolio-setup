@@ -184,7 +184,6 @@ const errorMessage = document.getElementById('error-message');
 
 let isMailInvalid = (str) => {
   if (/[A-Z]/g.test(str)) {
-    errorMessage.classList.add('show');
     return true;
   }
   errorMessage.classList.remove('show');
@@ -198,6 +197,7 @@ window.addEventListener('keyup', () => {
 formContainer.addEventListener('submit', (e) => {
   if (isMailInvalid(emailBox.value)) {
     e.preventDefault();
+    errorMessage.classList.add('show');
     return
   }
 });

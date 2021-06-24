@@ -724,7 +724,7 @@ ul .small-button-wrapper {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin-bottom: 12px;
-  padding: 15px;
+  padding: 15px 1px;
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
@@ -742,6 +742,47 @@ ul .small-button-wrapper {
   font-size: 15px;
 }
 
+#error-message{
+  display: none;
+  width: auto;
+  height: auto;
+  border: none;
+  background: red;
+  border-radius: 8px;
+  color: #fff;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  align-content: center; 
+  position: relative;
+}
+
+#error-message.show{
+  display: block;
+  width: auto;
+  height: auto;
+  border: none;
+  background: red;
+  border-radius: 8px;
+  color: #fff;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  align-content: center;
+  position: relative;
+}
+
+.intouch {
+  margin-bottom: 20px;
+}
 @media screen and (min-width: 993px) {
   .popup-bg {
     z-index: 3;
@@ -1036,51 +1077,18 @@ ul .small-button-wrapper {
     font-size: 20px;
     line-height: 28px;
   }
+  #button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .input-box {
     width: 430px;
     border-radius: 0;
   }
 
-  #error-message{
-    display: none;
-    width: auto;
-    height: auto;
-    border: none;
-    background: red;
-    border-radius: 8px;
-    color: #6070ff;
-    padding: 4px 10px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    margin-right: 12px;
-    margin-bottom: 12px;
-    /* align-content: center; */
-    position: relative;
-    bottom: 60px;
+  .intouch {
+    margin-bottom: 20px;
   }
-
-  #error-message.show{
-    display: block;
-    width: auto;
-    height: auto;
-    border: none;
-    background: red;
-    border-radius: 8px;
-    color: #6070ff;
-    padding: 4px 10px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    margin-right: 12px;
-    margin-bottom: 12px;
-    /* align-content: center; */
-    position: relative;
-    bottom: 60px;
-  }
-
-
 }
