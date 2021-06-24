@@ -180,24 +180,20 @@ let emailContainer = document.querySelector('.email-area');
 let confirmBtn = document.querySelector('.intouch')
 let emailInput = emailBox.textContent;
 let formContainer = document.getElementById('contact-me')
-let test = false;
+const errorMessage = document.getElementById('error-message');
 
 let isMailInvalid = (str) => {
   if (/[A-Z]/g.test(str)) {
+    errorMessage.classList.add('show');
     return true;
   }
+  errorMessage.classList.remove('show');
   return false;
-}
+};
 
 window.addEventListener('keyup', () => {
-  console.log(emailBox.value, isMailInvalid(emailBox.value))
+  isMailInvalid(emailBox.value);
 })
-
-// confirmBtn.addEventListener('click', (e) => {
-//   if(test) {
-//     confirmBtn.preventDefault();
-//   }
-// });
 
 formContainer.addEventListener('submit', (e) => {
   if (isMailInvalid(emailBox.value)) {

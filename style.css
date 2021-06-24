@@ -1041,4 +1041,46 @@ ul .small-button-wrapper {
     width: 430px;
     border-radius: 0;
   }
+
+  #error-message{
+    display: none;
+    width: auto;
+    height: auto;
+    border: none;
+    background: red;
+    border-radius: 8px;
+    color: #6070ff;
+    padding: 4px 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    /* align-content: center; */
+    position: relative;
+    bottom: 60px;
+  }
+
+  #error-message.show{
+    display: block;
+    width: auto;
+    height: auto;
+    border: none;
+    background: red;
+    border-radius: 8px;
+    color: #6070ff;
+    padding: 4px 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    /* align-content: center; */
+    position: relative;
+    bottom: 60px;
+  }
+
+
 }
