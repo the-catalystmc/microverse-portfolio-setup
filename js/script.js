@@ -18,37 +18,41 @@ const myData = [{
     projectImg: "images/project1.svg",
     projectTitle: "Tonic",
     projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css'],
-    link1: '',
-    link2: '',
+    modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
+    technologies: ['html', 'css', 'javaScript'],
+    link1: 'https://bizuns.com/symbols-bullets-copy-paste',
+    link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
     customStyle: 'row',
   },
   {
     projectImg: "images/portfolio2.svg",
     projectTitle: "Multi-Post Stories",
     projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
     technologies: ['html', 'css', 'javaScript'],
-    link1: '',
-    link2: '',
+    link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
+    link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
     customStyle: 'row-reverse',
   },
   {
     projectImg: 'images/project3.png',
     projectTitle: "Tonic",
     projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
     technologies: ['html', 'css', 'javaScript'],
-    link1: '',
-    link2: '',
+    link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
+    link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
     customStyle: 'row',
   },
   {
     projectImg: 'images/project4.svg',
     projectTitle: "Multi-Post Stories",
     projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
     technologies: ['html', 'css', 'javaScript'],
-    link1: '',
-    link2: '',
-    customStyle: 'row',
+    link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
+    link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
+    customStyle: 'row-reverse',
   },
 ];
 
@@ -60,6 +64,13 @@ const createTech = (name) => {
   newTech.innerText = name;
   return newTech;
 }
+
+// const createQual = (name) => {
+//   const newQual = document.createElement('LI');
+//   newQual.classList.add('project__quali');
+//   newQual.innerText = name;
+//   return newQual;
+// }
 
 const removeChilds = (parent) => {
   while (parent.lastChild) {
@@ -74,8 +85,9 @@ function toggleModal () {
 // Creates an element based on projectTemplate
 const createProjectElement = (projectInfo) => {
   const clone = projectTemplate.content.firstElementChild.cloneNode(true);
-
   const techsTarget = clone.querySelector('.project__tech');
+  const qualTarget = clone.querySelector('.project__quali');
+  clone.querySelector('.project__img').src = projectInfo.projectImg;
   clone.querySelector('.project__title').innerText = projectInfo.projectTitle;
   clone.querySelector('.project__desc').innerText = projectInfo.projectDesc;
   clone.querySelector('.project__card').style.flexDirection  = projectInfo.customStyle;
@@ -97,6 +109,12 @@ const setUpPage  = () => {
 
 const displayModalWindow = (projectInfo) => {
   modalWindow.querySelector('.modal__title').innerText = projectInfo.projectTitle;
+  modalWindow.querySelector('.modal__img').src = projectInfo.projectImg;
+  modalWindow.querySelector('.modal__desc').innerText = projectInfo.modalDesc;
+  modalWindow.querySelector('.modal__title').innerText = projectInfo.projectTitle;
+  modalWindow.querySelector('.modal__button--see-live').href = projectInfo.link1;
+  modalWindow.querySelector('.modal__button--see-src').href = projectInfo.link2;
+
 
   removeChilds(techContainer);
   addTechnologies(projectInfo, techContainer);
@@ -111,6 +129,14 @@ const addTechnologies = (projectInfo, target) => {
   }
 }
 
+// const addQualification = (projectInfo, target) => {
+//   // Creates techs using the names on myData, then adds them to the ul parent container
+//   for (let i = 0; i < projectInfo.projectQual.length; i++) {
+//     const element = createQual(projectInfo.projectQual[i]);
+//     target.appendChild(element);
+//   }
+// }
+
 function openMenu() {
   popMenu.style.display = 'flex';
 }
@@ -122,7 +148,7 @@ function closeMenu() {
 
 
 // Function calls
-setUpPage();
+
 
 
 burgerBtn.addEventListener('click', () => {
@@ -141,5 +167,5 @@ closeModalBtn.addEventListener('click', () => {
 })
 
 window.addEventListener('load', () => {
-
+  setUpPage();
 })

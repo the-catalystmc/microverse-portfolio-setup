@@ -366,6 +366,8 @@ a:visited {
 
 .modal__icon-close:hover {
   color: #253858;
+  background: none;
+  box-shadow: none;
 }
 
 .modal__icon-close:active {
@@ -628,6 +630,7 @@ ul .small-button-wrapper {
   line-height: 16px;
   letter-spacing: 0.03em;
   margin-right: 12px;
+  margin-bottom: 12px;
   align-content: center;
 }
 
@@ -826,7 +829,7 @@ ul .small-button-wrapper {
   }
 
   .modal__window {
-    width: 50%;
+    width: 70%;
   }
 
   .modal__title {
