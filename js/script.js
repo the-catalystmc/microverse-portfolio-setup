@@ -201,10 +201,7 @@ window.addEventListener('keyup', () => {
 
 formContainer.addEventListener('submit', (e) => {
   if (isMailInvalid(emailBox.value)) {
-    console.log("Helo")
     e.preventDefault();
-  }else {
-    console.log("bye")
+    return
   }
-
 });
