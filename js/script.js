@@ -3,6 +3,7 @@ const burgerBtn = document.getElementById('burger');
 const listParent = document.getElementById('menu-list');
 const modalWindow = document.getElementById('modal');
 const closeModalBtn = document.querySelector('.modal__icon-close');
+// const qualTarget = document.querySelector('.modal__list');
 
 // POPUP WINDOW SETUP
 const techContainer = document.querySelector('.modal__tech');
@@ -23,6 +24,7 @@ const myData = [{
   link1: 'https://bizuns.com/symbols-bullets-copy-paste',
   link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
   customStyle: 'row',
+  projectQual: ['helo', 'hi', 'bye'],
 },
 {
   projectImg: 'images/portfolio2.svg',
@@ -33,6 +35,7 @@ const myData = [{
   link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
   link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
   customStyle: 'row-reverse',
+  projectQual: ['helo', 'hi', 'bye'],
 },
 {
   projectImg: 'images/project3.png',
@@ -43,6 +46,7 @@ const myData = [{
   link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
   link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
   customStyle: 'row',
+  projectQual: ['helo', 'hi', 'bye'],
 },
 {
   projectImg: 'images/project4.svg',
@@ -53,6 +57,7 @@ const myData = [{
   link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
   link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
   customStyle: 'row-reverse',
+  projectQual: ['helo', 'hi', 'bye'],
 },
 ];
 
@@ -92,7 +97,9 @@ const displayModalWindow = (projectInfo) => {
   modalWindow.querySelector('.modal__button--see-src').href = projectInfo.link2;
 
   removeChilds(techContainer);
+  // removeChilds(qualTarget);
   addTechnologies(projectInfo, techContainer);
+  // addQualification(projectInfo, qualTarget);
   toggleModal();
 };
 
@@ -107,13 +114,14 @@ const displayModalWindow = (projectInfo) => {
 const createProjectElement = (projectInfo) => {
   const clone = projectTemplate.content.firstElementChild.cloneNode(true);
   const techsTarget = clone.querySelector('.project__tech');
-  // const qualTarget = clone.querySelector('.project__quali');
+  const qualTarget = clone.querySelector('.project__quali');
   clone.querySelector('.project__img').src = projectInfo.projectImg;
   clone.querySelector('.project__title').innerText = projectInfo.projectTitle;
   clone.querySelector('.project__desc').innerText = projectInfo.projectDesc;
   clone.querySelector('.project__card').style.flexDirection = projectInfo.customStyle;
 
   addTechnologies(projectInfo, techsTarget);
+  // addQualification(projectInfo, qualTarget);
 
   clone.querySelector('.project__button').addEventListener('click', () => {
     displayModalWindow(projectInfo);
