@@ -1,8 +1,43 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 * {
   padding-inline-start: 0;
 }
+
+button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #6070ff;
+  background: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #7f8cff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+button:hover {
+  border: none;
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px #4053fc3d;
+}
+
+button:active {
+  border: none;
+  background: #2230d2;
+  color: #fff;
+}
+
+button:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+}
+
 
 /*.overlay {
   position: fixed;
@@ -271,6 +306,81 @@ a:visited {
 }
 
 /* Project Pages */
+
+.project {
+  background-color: #e5e5e5;
+  padding: 114px 24px;
+}
+
+.project__card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.project__img {
+  width: 100%;
+  height: auto;
+}
+
+.project__title {
+   font-size: 32px;
+   line-height: 36px;
+   color: #172b4d;
+   font-weight: 700;
+   margin: 12px 0;
+}
+
+.project__quali {
+  display: flex;
+  align-items: center;
+}
+
+.project__quali li {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a869a;
+  line-height: 16px;
+  margin-right: 8px;
+}
+
+.project__quali li:first-child {
+  font-size: 13px;
+  font-weight: 600;
+  color: #344563;
+  text-transform: uppercase;
+}
+
+.project__circle {
+  height: 6px;
+  width: 6px;
+  background: #7a7a7a;
+  border-radius: 50%;
+}
+
+.project__desc {
+  font-size: 15px;
+  color: #344563;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.project__tech {
+  display: flex;
+  align-items: center;
+}
+
+.project__tag {
+  padding: 4px 12px;
+  border-radius: 8px;
+  background: #ebebff;
+  margin-right: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
 
 .works-wrapper ul {
   display: grid;
@@ -581,6 +691,22 @@ ul .small-button-wrapper {
     left: 10%;
     top: 8%;
     width: 80%;
+  }
+
+  .project__card {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    padding: 24px;
+  }
+
+  .project__card--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .project__img {
+    margin-right: 30px;
+    max-height: 60vh;
   }
 
   .dsk-container {
