@@ -114,7 +114,7 @@ const displayModalWindow = (projectInfo) => {
 const createProjectElement = (projectInfo) => {
   const clone = projectTemplate.content.firstElementChild.cloneNode(true);
   const techsTarget = clone.querySelector('.project__tech');
-  const qualTarget = clone.querySelector('.project__quali');
+  // const qualTarget = clone.querySelector('.project__quali');
   clone.querySelector('.project__img').src = projectInfo.projectImg;
   clone.querySelector('.project__title').innerText = projectInfo.projectTitle;
   clone.querySelector('.project__desc').innerText = projectInfo.projectDesc;
