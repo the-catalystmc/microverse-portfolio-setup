@@ -17,29 +17,43 @@ let isMenuClose = true;
 
 //Projects Data
 const myData = [{
-    projectTitle: "Project 1",
-    projectDesc: 'Laboris sint quis velit id in Lorem nulla labore amet eu do.',
-    technologies: ['javaScript', 'ruby', 'html'],
+    projectImg: "images/project1.svg",
+    projectTitle: "Tonic",
+    projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['html', 'css', 'javaScript'],
+    link1: '',
+    link2: '',
   },
   {
-    projectTitle: "Project 2",
-    projectDesc: 'Laboris sint quis balablbalbalaa labore amet eu do.',
-    technologies: ['javaScript', 'html'],
+    projectImg: "images/portfolio2.svg",
+    projectTitle: "Multi-Post Stories",
+    projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['html', 'css', 'javaScript'],
+    link1: '',
+    link2: '',
   },
   {
-    projectTitle: "Project 3",
-    projectDesc: 'Laboris sint quis velit idbalbalbalbalblaba.',
-    technologies: ['javaScript', 'ruby', 'html'],
+    projectImg: 'images/project3.png',
+    projectTitle: "Tonic",
+    projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['html', 'css', 'javaScript'],
+    link1: '',
+    link2: '',
+  },
+  {
+    projectImg: 'images/project4.svg',
+    projectTitle: "Multi-Post Stories",
+    projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['html', 'css', 'javaScript'],
+    link1: '',
+    link2: '',
   },
   {
     projectTitle: "Project 4",
-    projectDesc: 'blablablablaba id in Lorem nulla labore amet eu do.',
-    technologies: ['javaScript', 'ruby', 'html'],
-  },
-  {
-    projectTitle: "Project 4",
-    projectDesc: 'blablablablaba id in Lorem nulla labore amet eu do.',
-    technologies: ['javaScript', 'ruby', 'html'],
+    projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['html', 'css', 'javaScript'],
+    link1: '',
+    link2: '',
   },
 ];
 
@@ -73,6 +87,7 @@ function closeProjectModal() {
 
 // sets modal data every time you click a see project button
 const setUpModalData = (index) => {
+  popWindow[0].querySelector('.projectpic').src = myData[index].projectImg;
   popWindow[0].querySelector('.project-name').innerText = myData[index].projectTitle;
   popWindow[0].querySelector('#mobile-pop-text').textContent = myData[index].projectDesc;
   popWindow[0].querySelector('#desk-pop-text').textContent = myData[index].projectDesc;
@@ -91,6 +106,7 @@ const setUpProjectsData = () => {
   Object.entries(projects).forEach((arr) => {
     let index = arr[0];
     let currentProject = arr[1];
+    currentProject.querySelector('.projectpic').src = myData[index].projectImg;
     currentProject.querySelector('.project-title').innerText = myData[index].projectTitle;
     currentProject.querySelector('.primary-read').innerText = myData[index].projectDesc;
 

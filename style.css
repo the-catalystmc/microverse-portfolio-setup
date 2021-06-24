@@ -305,7 +305,8 @@ a:visited {
 }
 
 .projectpic {
-  position: relative;
+  align-self: center;
+  width: 90%;
   top: 16px;
 }
 
