@@ -173,3 +173,23 @@ closeModalBtn.addEventListener('click', () => {
 window.addEventListener('load', () => {
   setUpPage();
 });
+
+//------------------------------------------------
+let emailBox = document.querySelector('.email-box');
+let emailContainer = document.querySelector('.email-area');
+let confirmBtn = document.querySelector('.intouch')
+let emailInput = emailBox.textContent;
+let test = true;
+
+let validateCase = (str) => {
+    if(/[A-Z]/g.test(str)){
+      return true;
+}
+  return false;
+}
+
+confirmBtn.addEventListener('click', (e) => {
+  if(test) {
+    confirmBtn.preventDefault();
+  }
+});
