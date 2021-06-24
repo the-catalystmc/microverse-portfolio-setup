@@ -1,17 +1,15 @@
 const popMenu = document.getElementById('pop-menu');
 const burgerBtn = document.getElementById('burger');
 const listParent = document.getElementById('menu-list');
-const projects = document.getElementsByClassName('project-1');
-const popWindow = document.getElementsByClassName('popup-window');
+const modalWindow = document.getElementById('modal');
+const closeModalBtn = document.querySelector('.modal__icon-close');
 
 //POPUP WINDOW SETUP
-let body = document.querySelector('body');
-let openPopup = document.querySelector('.popup-btn');
-let closePopup = document.querySelector('.close-btn');
-let popupWindow = document.querySelector('.popup-window');
-let popupBg = document.querySelector('.popup-bg');
-const mobileTechContainer = document.querySelector('#mobile-pop-lang');
-const deskTechContainer = document.querySelector('#desk-pop-lang');
+const techContainer = document.querySelector('.modal__tech');
+
+//CLONE AND TARGET 
+const projectTemplate = document.querySelector('#project-template');
+const projectList = document.querySelector('#project-list');
 
 let isMenuClose = true;
 
@@ -20,9 +18,10 @@ const myData = [{
     projectImg: "images/project1.svg",
     projectTitle: "Tonic",
     projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javaScript'],
+    technologies: ['html', 'css'],
     link1: '',
     link2: '',
+    customStyle: 'row',
   },
   {
     projectImg: "images/portfolio2.svg",
@@ -31,6 +30,7 @@ const myData = [{
     technologies: ['html', 'css', 'javaScript'],
     link1: '',
     link2: '',
+    customStyle: 'row-reverse',
   },
   {
     projectImg: 'images/project3.png',
@@ -39,6 +39,7 @@ const myData = [{
     technologies: ['html', 'css', 'javaScript'],
     link1: '',
     link2: '',
+    customStyle: 'row',
   },
   {
     projectImg: 'images/project4.svg',
@@ -47,22 +48,15 @@ const myData = [{
     technologies: ['html', 'css', 'javaScript'],
     link1: '',
     link2: '',
-  },
-  {
-    projectTitle: "Project 4",
-    projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javaScript'],
-    link1: '',
-    link2: '',
+    customStyle: 'row',
   },
 ];
-
 
 // ----- FUNCTIONS DECLARATIONS------
 const createTech = (name) => {
   const newTech = document.createElement('LI');
   newTech.classList.add('small-button');
-  newTech.classList.add('lang-item');
+  newTech.classList.add('modal-tag');
   newTech.innerText = name;
   return newTech;
 }
@@ -73,50 +67,49 @@ const removeChilds = (parent) => {
   }
 };
 
-function openProjectModal() {
-  popupBg.style.display = 'flex';
-  popupWindow.style.display = 'block';
+function toggleModal () {
+  modalWindow.classList.toggle('show');
 }
 
-function closeProjectModal() {
-  popupWindow.style.display = 'none';
-  popupBg.style.display = 'none';
-  removeChilds(mobileTechContainer);
-  removeChilds(deskTechContainer);
+// Creates an element based on projectTemplate
+const createProjectElement = (projectInfo) => {
+  const clone = projectTemplate.content.firstElementChild.cloneNode(true);
+
+  const techsTarget = clone.querySelector('.project__tech');
+  clone.querySelector('.project__title').innerText = projectInfo.projectTitle;
+  clone.querySelector('.project__desc').innerText = projectInfo.projectDesc;
+  clone.querySelector('.project__card').style.flexDirection  = projectInfo.customStyle;
+
+  addTechnologies(projectInfo, techsTarget);
+
+  clone.querySelector('.project__button').addEventListener('click', () => {
+    displayModalWindow(projectInfo);
+  })
+  projectList.appendChild(clone);
 }
 
-// sets modal data every time you click a see project button
-const setUpModalData = (index) => {
-  popWindow[0].querySelector('.projectpic').src = myData[index].projectImg;
-  popWindow[0].querySelector('.project-name').innerText = myData[index].projectTitle;
-  popWindow[0].querySelector('#mobile-pop-text').textContent = myData[index].projectDesc;
-  popWindow[0].querySelector('#desk-pop-text').textContent = myData[index].projectDesc;
+// Iterates over each myData element
+const setUpPage  = () => {
+  myData.forEach((data) => {
+    createProjectElement(data);
+  })
+};
 
+const displayModalWindow = (projectInfo) => {
+  modalWindow.querySelector('.modal__title').innerText = projectInfo.projectTitle;
+
+  removeChilds(techContainer);
+  addTechnologies(projectInfo, techContainer);
+  toggleModal();
+}
+
+const addTechnologies = (projectInfo, target) => {
   // Creates techs using the names on myData, then adds them to the ul parent container
-  for (let i = 0; i < myData[index].technologies.length; i++) {
-    const element = createTech(myData[index].technologies[i]);
-
-    deskTechContainer.appendChild(element);
-    mobileTechContainer.appendChild(element);
+  for (let i = 0; i < projectInfo.technologies.length; i++) {
+    const element = createTech(projectInfo.technologies[i]);
+    target.appendChild(element);
   }
-};
-
-// puts the data from the js to the html elements
-const setUpProjectsData = () => {
-  Object.entries(projects).forEach((arr) => {
-    let index = arr[0];
-    let currentProject = arr[1];
-    currentProject.querySelector('.projectpic').src = myData[index].projectImg;
-    currentProject.querySelector('.project-title').innerText = myData[index].projectTitle;
-    currentProject.querySelector('.primary-read').innerText = myData[index].projectDesc;
-
-    // Add click event to each button of the projects and link openModal and setData functions
-    currentProject.querySelector('.popup-btn').addEventListener('click', (source) => {
-      openProjectModal();
-      setUpModalData(index);
-    });
-  });
-};
+}
 
 function openMenu() {
   popMenu.style.display = 'flex';
@@ -125,11 +118,12 @@ function openMenu() {
 function closeMenu() {
   popMenu.style.display = 'none';
 }
-//------------------------------------
+//-----------------------------------------------
 
 
 // Function calls
-setUpProjectsData();
+setUpPage();
+
 
 burgerBtn.addEventListener('click', () => {
   if (isMenuClose ? openMenu() : closeMenu());
@@ -142,10 +136,8 @@ listParent.addEventListener('click', (e) => {
   }
 });
 
-closePopup.addEventListener('click', () => {
-  closeProjectModal();
-  console.log('Window Close')
-
+closeModalBtn.addEventListener('click', () => {
+  toggleModal();
 })
 
 window.addEventListener('load', () => {

@@ -294,13 +294,29 @@ a:visited {
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: flex-start;
   padding: 100px 12px;
   opacity: 0%;
   visibility: hidden;
   overflow-y: scroll;
+}
+
+.modal.show {
+  display: flex;
+  animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  
 }
 
 .modal--active {
