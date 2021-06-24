@@ -742,7 +742,7 @@ ul .small-button-wrapper {
   font-size: 15px;
 }
 
-#error-message{
+#error-message {
   display: none;
   width: auto;
   height: auto;
@@ -757,11 +757,11 @@ ul .small-button-wrapper {
   letter-spacing: 0.03em;
   margin-right: 12px;
   margin-bottom: 12px;
-  align-content: center; 
+  align-content: center;
   position: relative;
 }
 
-#error-message.show{
+#error-message.show {
   display: block;
   width: auto;
   height: auto;
@@ -783,6 +783,7 @@ ul .small-button-wrapper {
 .intouch {
   margin-bottom: 20px;
 }
+
 @media screen and (min-width: 993px) {
   .popup-bg {
     z-index: 3;
@@ -1077,6 +1078,7 @@ ul .small-button-wrapper {
     font-size: 20px;
     line-height: 28px;
   }
+
   #button-wrapper {
     display: flex;
     flex-direction: column;

@@ -16,49 +16,49 @@ let isMenuClose = true;
 
 // Projects Data
 const myData = [{
-    projectImg: 'images/project1.svg',
-    projectTitle: 'Tonic',
-    projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
-    technologies: ['html', 'css', 'javaScript'],
-    link1: 'https://bizuns.com/symbols-bullets-copy-paste',
-    link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
-    customStyle: 'row',
-    projectQual: ['helo', 'hi', 'bye'],
-  },
-  {
-    projectImg: 'images/portfolio2.svg',
-    projectTitle: 'Multi-Post Stories',
-    projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
-    technologies: ['html', 'css', 'javaScript'],
-    link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
-    link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
-    customStyle: 'row-reverse',
-    projectQual: ['helo', 'hi', 'bye'],
-  },
-  {
-    projectImg: 'images/project3.png',
-    projectTitle: 'Tonic',
-    projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
-    technologies: ['html', 'css', 'javaScript'],
-    link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
-    link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
-    customStyle: 'row',
-    projectQual: ['helo', 'hi', 'bye'],
-  },
-  {
-    projectImg: 'images/project4.svg',
-    projectTitle: 'Multi-Post Stories',
-    projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
-    technologies: ['html', 'css', 'javaScript'],
-    link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
-    link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
-    customStyle: 'row-reverse',
-    projectQual: ['helo', 'hi', 'bye'],
-  },
+  projectImg: 'images/project1.svg',
+  projectTitle: 'Tonic',
+  projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
+  technologies: ['html', 'css', 'javaScript'],
+  link1: 'https://bizuns.com/symbols-bullets-copy-paste',
+  link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
+  customStyle: 'row',
+  projectQual: ['helo', 'hi', 'bye'],
+},
+{
+  projectImg: 'images/portfolio2.svg',
+  projectTitle: 'Multi-Post Stories',
+  projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
+  technologies: ['html', 'css', 'javaScript'],
+  link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
+  link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
+  customStyle: 'row-reverse',
+  projectQual: ['helo', 'hi', 'bye'],
+},
+{
+  projectImg: 'images/project3.png',
+  projectTitle: 'Tonic',
+  projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
+  technologies: ['html', 'css', 'javaScript'],
+  link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
+  link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
+  customStyle: 'row',
+  projectQual: ['helo', 'hi', 'bye'],
+},
+{
+  projectImg: 'images/project4.svg',
+  projectTitle: 'Multi-Post Stories',
+  projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
+  technologies: ['html', 'css', 'javaScript'],
+  link1: 'https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=37%3A2238',
+  link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
+  customStyle: 'row-reverse',
+  projectQual: ['helo', 'hi', 'bye'],
+},
 ];
 
 // ----- FUNCTIONS DECLARATIONS------
@@ -175,14 +175,11 @@ window.addEventListener('load', () => {
 });
 
 //------------------------------------------------
-let emailBox = document.querySelector('#email');
-let emailContainer = document.querySelector('.email-area');
-let confirmBtn = document.querySelector('.intouch')
-let emailInput = emailBox.textContent;
-let formContainer = document.getElementById('contact-me')
+const emailBox = document.querySelector('#email');
+const formContainer = document.getElementById('contact-me');
 const errorMessage = document.getElementById('error-message');
 
-let isMailInvalid = (str) => {
+const isMailInvalid = (str) => {
   if (/[A-Z]/g.test(str)) {
     return true;
   }
@@ -192,12 +189,11 @@ let isMailInvalid = (str) => {
 
 window.addEventListener('keyup', () => {
   isMailInvalid(emailBox.value);
-})
+});
 
 formContainer.addEventListener('submit', (e) => {
   if (isMailInvalid(emailBox.value)) {
     e.preventDefault();
     errorMessage.classList.add('show');
-    return
   }
 });
