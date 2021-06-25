@@ -1,4 +1,4 @@
-import { isDataSaved, loadUserData, saveUserData } from "./storage.js"
+import { saveInputData, loadInputData } from './storage.js';
 
 const popMenu = document.getElementById('pop-menu');
 const burgerBtn = document.getElementById('burger');
@@ -173,6 +173,7 @@ closeModalBtn.addEventListener('click', () => {
 });
 
 window.addEventListener('load', () => {
+  loadInputData();
   setUpPage();
 });
 
@@ -191,8 +192,7 @@ const isMailInvalid = (str) => {
 
 window.addEventListener('keyup', () => {
   isMailInvalid(emailBox.value);
-  saveUserData();
-
+  saveInputData();
 });
 
 formContainer.addEventListener('submit', (e) => {
