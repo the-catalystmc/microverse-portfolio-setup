@@ -1,3 +1,5 @@
+import { isDataSaved, loadUserData, saveUserData } from "./storage.js"
+
 const popMenu = document.getElementById('pop-menu');
 const burgerBtn = document.getElementById('burger');
 const listParent = document.getElementById('menu-list');
@@ -189,6 +191,8 @@ const isMailInvalid = (str) => {
 
 window.addEventListener('keyup', () => {
   isMailInvalid(emailBox.value);
+  saveUserData();
+
 });
 
 formContainer.addEventListener('submit', (e) => {
