@@ -41,15 +41,15 @@ let isMenuClose = true;
 
 // Projects Data
 const myData = [{
-  projectImg: 'images/project1.svg',
-  projectTitle: 'Tonic',
-  projectDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  modalDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
-  technologies: ['html', 'css', 'javaScript'],
-  link1: 'https://bizuns.com/symbols-bullets-copy-paste',
-  link2: 'https://self-publishingschool.com/how-to-write-dialogue/',
+  projectImg: './screenshots/TopTenCrypto.jpeg',
+  projectTitle: 'Top Ten Crypto',
+  projectDesc: 'This is a mobile web application that displays the total market capital of the top ten crypto currencies in the world.',
+  modalDesc: 'This is a mobile web application that displays the total market capital of the top ten crypto currencies in the world. Each individual currency can then be selected and the associated market value will be displayed for it. All data is requested from the CoinGecko API and then appended to the page.',
+  technologies: ['css','react', 'javaScript'],
+  link1: 'https://the-catalystmc.github.io/crypto-market-cap-app/#/currencies',
+  link2: 'https://github.com/the-catalystmc/crypto-market-cap-app',
   customStyle: 'row',
-  projectQual: ['helo', 'hi', 'bye'],
+  projectQual: ['hello', 'hi', 'bye'],
 },
 {
   projectImg: 'images/portfolio2.svg',
